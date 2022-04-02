@@ -13,5 +13,5 @@ self.addEventListener("load", () => {
    * Custom className
    * @param {string} className
    */
-  iframeScope.validateClassName = (className) => /^[^\s]+$/.test(className);
+  iframeScope.validateClassName = (className) => /\w+.*$/.test(className);
 });
